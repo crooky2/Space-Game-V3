@@ -16,13 +16,22 @@ To run this game locally:
 
 ## Folder Structure
 
-The workspace contains two folders by default:
+The workspace is organized as follows:
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+- `src/`: Source code
+  - `core/`: Game logic and mechanics
+    - `entities/`: Game objects (Player, Asteroid, Bullet)
+    - `managers/`: System managers (EntityManager, CollisionManager, etc.)
+    - `specialabilities/`: Special player abilities 
+    - `utils/`: Utility classes and constants
+  - `graphics/`: Rendering and visual components
+    - `ui/`: User interface elements
+      - `components/`: Reusable UI components (SlantedButton, GameCanvas)
+      - `menus/`: Game menu screens (PauseMenu, DeathScreen, etc.)
+- `bin/`: Compiled output files
+- `lib/`: External dependencies
 
-The compiled output files will be generated in the `bin` folder by default.
-
+The project follows a package structure that separates game logic from rendering concerns.
 
 ## Future Development
 
